@@ -17,18 +17,19 @@ public class ItemCoalPellet extends BaseItem implements IFuelHandler  {
 		burnTime = coalTime / 8;
 	}
 
-    protected void addNormalRecipe() {
-    	ShapelessOreRecipe recipe = new ShapelessOreRecipe(new ItemStack(this, 8), Items.COAL);
-		GameRegistry.addRecipe(recipe);
-		recipe = new ShapelessOreRecipe(new ItemStack(this, 8), new ItemStack(Items.COAL, 1, 1));
-		GameRegistry.addRecipe(recipe);
+//    protected void addNormalRecipe() {
+//
+//    	ShapelessOreRecipe recipe = new ShapelessOreRecipe(new ItemStack(this, 8), Items.COAL);
+//		GameRegistry.addRecipe(recipe);
+//		recipe = new ShapelessOreRecipe(new ItemStack(this, 8), new ItemStack(Items.COAL, 1, 1));
+//		GameRegistry.addRecipe(recipe);
+//
+//		GameRegistry.registerFuelHandler(this);
+//	}
 
-		GameRegistry.registerFuelHandler(this);
-	}
-
-	protected void addUpgradeRecipe() {
-		addNormalRecipe();
-	}
+//	protected void addUpgradeRecipe() {
+//		addNormalRecipe();
+//	}
 
 	public int getBurnTime(ItemStack fuel) {
 		if (fuel.isItemEqual(new ItemStack(this))) {

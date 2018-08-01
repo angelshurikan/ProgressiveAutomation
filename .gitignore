@@ -1,34 +1,22 @@
-## gradle
-/.gradle
-/build
-/gradle
-/gradlew
-/gradlew.bat
-
-## ForgeGradle
-/run
-
-## eclipse
-/eclipseOLD
-/eclipse
-/.settings
-/.metadata
-/.classpath
-/.project
-/bin
+# eclipse
+bin
+*.launch
+.settings
+.metadata
 .classpath
+.project
 
-## intellij
-/out
-/.idea
-/*.iml
-/*.ipr
-/*.iws
-/atlassian-ide-plugin.xml
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
 
-*Thumbs.db
+# gradle
+build
+.gradle
 
-/PA1.8_Client.launch
-/PA1.8_Server.launch
-/PA1.9_Client.launch
-/PA1.9_Server.launch
+# other
+eclipse
+run
